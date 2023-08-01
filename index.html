@@ -9,7 +9,14 @@
   <body>
     <div class="mainContainer">
       <div class="imageContainer">
-        <img src="./images/image-product-desktop.jpg" alt="product-image" />
+        <picture>
+          <source
+            srcset="./images/image-product-mobile.jpg"
+            media="(max-width: 375px)"
+          />
+          <source srcset="./images/image-product-desktop.jpg" />
+          <img src="./images/image-product-desktop.jpg" alt="Flowers" />
+        </picture>
       </div>
       <div class="textContainer">
         <div class="logoText">P E R F U M E</div>
@@ -23,7 +30,6 @@
           <div class="rawPrice">$169.99</div>
         </div>
         <div class="buttonContainer">
-          <!-- <img src="./images/icon-cart.svg" alt="cart-icon" /> -->
           <button class="addCartButton">
             <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
               <path
