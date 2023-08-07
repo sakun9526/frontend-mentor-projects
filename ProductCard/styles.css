@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;700&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  height: 50rem;
+  width: 65rem;
+  border-radius: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.textContainer {
+  padding: 2.5rem;
+  margin-top: 1rem;
+}
+
+img {
+  object-fit: fill;
+  height: 50rem;
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+
+.logoText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+.headingText {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 1.8rem;
+}
+
+.descriptionText {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.discountedPrice {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.rawPrice {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+.buttonContainer {
+  margin-top: 2.5rem;
+}
+
+.addCartButton {
+  background-color: hsl(158, 36%, 37%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: none;
+}
+
+@media (max-width: 37.5rem) {
+  .body {
+    padding: 1rem;
+  }
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  img {
+    height: 20rem;
+    width: 100%;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-left-radius: 0rem;
+  }
+
+  .textContainer {
+    padding: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .logoText {
+    font-size: 1rem;
+  }
+
+  .headingText {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .descriptionText {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .discountedPrice {
+    font-size: 2rem;
+  }
+
+  .rawPrice {
+    font-size: 1rem;
+  }
+}
