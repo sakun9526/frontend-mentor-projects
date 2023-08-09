@@ -7,7 +7,9 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /*
@@ -24,39 +26,113 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #F7F1E5;
 }
 /*
   5. Improve media defaults
 */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /*
   6. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /*
   7. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-
-:root{
-    --ff-ubuntu: 'Ubuntu', sans-serif;
-    --ff-inter: 'Inter', sans-serif;
-    --font-light-300: 300;
+:root {
+  --ff-ubuntu: 'Ubuntu', sans-serif;
+  --ff-inter: 'Inter', sans-serif;
+  --font-light-300: 300;
 }
 
-h1{
-    font-family: var(--ff-ubuntu)
+h1 {
+  font-family: var(--ff-inter);
+  margin-top: 0.625rem;
 }
 
+h3{
+  font-family: var(--ff-ubuntu);
+}
 
+header{
+    text-align: center;
+}
 
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  margin-top: 1.25rem;
+  justify-content: flex-start;
+}
 
+.card {
+  border: 1px solid #ccc;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1.25rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 21.875rem;
+  width: 21.875rem;
+  padding-bottom: 0.625rem;
+}
 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 100%;
+  display: block;
+  height: 15.625rem;
+  object-fit: fill;
+}
+
+.card-content {
+  padding: 0.625rem;
+  background-color: #FFF;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  margin: 0;
+  font-family: var(--ff-inter);
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: 0.625rem;
+  font-family: var(--ff-inter);
+  font-weight: var(--font-light-300);
+}
+
+a{
+  text-decoration: none;
+}
