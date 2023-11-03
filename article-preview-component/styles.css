@@ -1,0 +1,89 @@
+/* Import Manrope font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&&display=swap');
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Manrope', 'Inter';
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    max-height: 40rem;
+    max-width: 70rem;
+    border-radius: 2rem;
+    background-color: #FFF;
+}
+
+.image-drawer{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.right-container {
+    padding: 3rem;
+}
+
+.heading-text {
+    font-size: 2rem;
+    font-weight: 700;
+     color: hsl(217, 19%, 35%);
+}
+
+.body-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    color:  hsl(214, 17%, 51%);
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.bottom_userdetails {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.image-avatar {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+}
+
+.userdetails-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user_name {
+    font-size: 1.5rem;
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+.user_date {
+    font-size: 1.2rem;
+    color: hsl(212, 23%, 69%);
+    font-weight: 400;
+}
+
