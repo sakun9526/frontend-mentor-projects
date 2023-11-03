@@ -1,0 +1,61 @@
+/* Import Outfit font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', 'Inter';
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+    max-width: 35rem;
+    max-height: 50rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    margin-top: 4rem;
+  }
+
+.image-qrcode {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+  }
+
+  .image-container {
+    padding: 1rem;
+  }
+
+  .text-container_heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    max-width: 30rem;
+  }
+  
+  .text-container_body{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    max-width: 25rem;
+  }
+
+  .text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
